@@ -1,0 +1,25 @@
+{
+  // Evita que VSCode valide TypeScript en node_modules
+  "typescript.validate.enable": true,
+  "typescript.exclude": [
+    "functions/node_modules",
+    "node_modules"
+  ],
+  // Oculta node_modules del explorador (opcional)
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  // Formato y estilo de código (opcional)
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  // Para Flutter: activa sugerencias y linting
+  "dart.previewFlutterUiGuides": true,
+  "dart.lineLength": 120,
+  // Terminal integrado predeterminado (opcional)
+  "terminal.integrated.shell.windows": "powershell.exe",
+  "dart.flutterSdkPath": "C:\\flutter"
+}

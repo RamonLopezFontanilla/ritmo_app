@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "504746904982",
+    "project_id": "ritmo-2da74",
+    "storage_bucket": "ritmo-2da74.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504746904982:android:d35b1c856515ce32ed21b7",
+        "android_client_info": {
+          "package_name": "com.example.ritmo_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQuN3FyqKVNS-Ui1YlKJMYxxAN0x7rVG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504746904982:android:99f0ce5805ba7088ed21b7",
+        "android_client_info": {
+          "package_name": "com.example.ritmo_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQuN3FyqKVNS-Ui1YlKJMYxxAN0x7rVG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

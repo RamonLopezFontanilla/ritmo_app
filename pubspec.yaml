@@ -1,0 +1,55 @@
+name: ritmo_app
+description: "Una app gara gestión de bandas de música."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^9.0.0
+  uuid: ^4.3.3
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  logger: ^1.2.2
+  tutorial_coach_mark: ^1.2.11
+  shared_preferences: ^2.2.2
+  device_info_plus: ^9.0.0
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  cupertino_icons: ^1.0.8
+  cloud_firestore: ^5.6.12
+  cloud_functions: 5.6.2
+  http: ^1.1.0 
+  file_picker: ^10.3.7
+  image_picker: ^1.0.4
+  firebase_storage: 12.4.10
+  url_launcher: ^6.3.2
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  pdf: ^3.10.0
+  printing: ^5.10.0
+  collection: ^1.18.0
+  
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter 
+  flutter_lints: ^6.0.0
+  explorator: ^2.0.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/instrumentos/
