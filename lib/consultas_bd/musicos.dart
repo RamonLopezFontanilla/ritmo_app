@@ -77,7 +77,7 @@ class ConsultasMusicosBD {
   }
 
   /// ******************************************************************
-  /// OBTENER DATS COMPLETOS DE UN MÚSICO EN UNA BANDA
+  /// OBTENER DATOS COMPLETOS DE UN MÚSICO EN UNA BANDA
   ///
   /// Combina datos globales y datos específicos de la banda
   /// para devolver un objeto EdicionDatosMusico completo.

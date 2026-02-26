@@ -39,6 +39,9 @@ dev_dependencies:
   flutter_launcher_icons: ^0.13.1
   flutter_test:
     sdk: flutter 
+  mocktail: ^0.3.0
+  mockito: ^5.5.0
+  build_runner: ^2.5.0
   flutter_lints: ^6.0.0
   explorator: ^2.0.0
 

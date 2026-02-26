@@ -13,7 +13,7 @@ import 'package:ritmo_app/modelos/banda.dart';
 /// Toda la información se almacena en la colección principal "bandas" dentro de Firestore.
 /// ********************************************************
 class ConsultasBandasBD {
-  static final firestore = FirebaseFirestore.instance;
+  static FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   /// ******************************************************************
   /// OBTENER TODAS LAS BANDAS ORDENADAS POR NOMBRE

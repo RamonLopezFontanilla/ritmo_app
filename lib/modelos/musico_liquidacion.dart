@@ -27,7 +27,9 @@ class LiquidacionMusico {
     required this.importeFinal,
   });
 
-  /// Convertir a Map(String, dynamic) para Firestore
+  static int _toInt(dynamic v) => (v as num?)?.toInt() ?? 0;
+  static double _toDouble(dynamic v) => (v as num?)?.toDouble() ?? 0.0;
+
   Map<String, dynamic> toMap() {
     return {
       'nombre': nombre,
@@ -44,25 +46,23 @@ class LiquidacionMusico {
     };
   }
 
-  /// Crear instancia desde Map String, dynamic de Firestore
   factory LiquidacionMusico.fromMap(String id, Map<String, dynamic> map) {
     return LiquidacionMusico(
       id: id,
       nombre: map['nombre'] ?? '',
       incluidoEnLiquidacion: map['incluidoEnLiquidacion'] ?? false,
-      puntosAntiguedad: map['puntosAntiguedad'] ?? 0,
-      numEnsayosPuntual: map['numEnsayosPuntual'] ?? 0,
-      numEnsayosRetraso: map['numEnsayosRetraso'] ?? 0,
-      numActuacionPuntual: map['numActuacionPuntual'] ?? 0,
-      numActuacionRetraso: map['numActuacionRetraso'] ?? 0,
-      numSemanaStaPuntual: map['numSemanaStaPuntual'] ?? 0,
-      numSemanaStaRetraso: map['numSemanaStaRetraso'] ?? 0,
-      puntosTotales: map['puntosTotales'] ?? 0,
-      importeFinal: (map['importeFinal'] ?? 0).toDouble(),
+      puntosAntiguedad: _toInt(map['puntosAntiguedad']),
+      numEnsayosPuntual: _toInt(map['numEnsayosPuntual']),
+      numEnsayosRetraso: _toInt(map['numEnsayosRetraso']),
+      numActuacionPuntual: _toInt(map['numActuacionPuntual']),
+      numActuacionRetraso: _toInt(map['numActuacionRetraso']),
+      numSemanaStaPuntual: _toInt(map['numSemanaStaPuntual']),
+      numSemanaStaRetraso: _toInt(map['numSemanaStaRetraso']),
+      puntosTotales: _toInt(map['puntosTotales']),
+      importeFinal: _toDouble(map['importeFinal']),
     );
   }
 
-  /// Crear copia modificando algunos campos
   LiquidacionMusico copyWith({
     String? nombre,
     bool? incluidoEnLiquidacion,
